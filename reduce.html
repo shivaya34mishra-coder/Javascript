@@ -7,14 +7,11 @@
 </head>
 <body>
     <script>
-        const num=[11,32,42,49,54,23,81,31,67,9];
-        const odd=num.filter((i)=>(i%2!=0));
-        const squre=num.map((i)=>(i*i));
-        console.log("odd==",odd);
-        console.log("squre==",squre);
-
-    
-
+         const num=[11,32,42,49,54,23,81,31,67,9];
+        const even=num.filter((i)=>(i%2==0));
+        const squre=even.map((i)=>(i*i));
+        const sum=squre.reduce((i,s)=>(i+s));
+        console.log("sum==",sum);
 
 
 
